@@ -17,9 +17,7 @@ User-friendly UI for image upload and display.
 
 Responsive design adaptable to desktop and mobile.
 
-Placeholder components to show detection results once API integration is complete.
-
-Future: 
+Future implementations: 
 
 Connecting this frontend to the detection API for real-time AI-generated image classification.
 
