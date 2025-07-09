@@ -14,7 +14,7 @@ def upload_image(request):
             image_path = image.image.path
             confidence = detect_ai_image(image_path)
             image.ai_confidence = confidence
-            image.is_ai = confidence > 60  # or whatever threshold you want
+            image.is_ai = confidence > 60  # or whatever threshold 
             image.save()
 
             # redirect to results page or process here
