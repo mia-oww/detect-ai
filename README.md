@@ -1,4 +1,5 @@
 DetectAI - Frontend
+
 This repository contains the front-end web interface for DetectAI — a platform designed to detect AI-generated faces using trained neural networks to detect whether an image is a StyleGan fake.
 
 Overview
