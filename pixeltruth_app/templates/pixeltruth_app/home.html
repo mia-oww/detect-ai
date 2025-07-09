@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DetectAi Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+
+  <h1 class="text-5xl font-bold mb-8 text-gray-800">PixelTruth</h1>
+  <p class="text-gray-600 mb-12 max-w-xl text-center">
+    Detect AI-generated images with confidence! Upload your image and get instant analysis. 
+  </p>
+
+  <div class="space-x-6">
+    <a href="{% url 'upload_image' %}" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded shadow">
+      Upload Image
+    </a>
+    <a href="{% url 'recent_results' %}" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded shadow">
+      View Recent Results
+    </a>
+  </div>
+
+</body>
+</html>

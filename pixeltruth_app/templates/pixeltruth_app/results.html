@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PixelTruth - Results</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 2rem; }
+        img { max-width: 400px; margin: 20px 0; border-radius: 8px; }
+        .score { font-size: 1.5rem; margin-top: 1rem; }
+        .result {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>🖼️ Upload Result</h1>
+
+    <img src="{{ image.image.url }}" alt="Uploaded Image">
+
+    <div class="score">Confidence it's AI-generated: <strong>{{ image.ai_confidence }}%</strong></div>
+
+    <div class="result">
+        {% if image.is_ai %}
+            🚨 This image is likely AI-generated.
+        {% else %}
+            ✅ This image appears to be human-made.
+        {% endif %}
+    </div>
+
+    <br><br>
+    <a href="{% url 'home' %}">Upload another image</a>
+</body>
+</html>
